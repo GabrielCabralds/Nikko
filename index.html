@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Financeiro</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Meu Dashboard Financeiro</h1>
+            <div class="user-info">
+                <span>Olá, Usuário</span>
+                <button class="btn-settings"><i class="fas fa-cog"></i></button>
+            </div>
+        </header>
+
+        <main>
+            <!-- Cartão bancário estilizado -->
+            <section class="card-section">
+                <div class="credit-card">
+                    <div class="card-header">
+                        <span class="card-logo">BLACK CARD</span>
+                        <span class="card-chip"><i class="fas fa-microchip"></i></span>
+                    </div>
+                    <div class="card-number">**** **** **** 1234</div>
+                    <div class="card-footer">
+                        <div class="card-holder">NOME DO TITULAR</div>
+                        <div class="card-expiry">12/28</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Estatísticas financeiras -->
+            <section class="stats-section">
+                <div class="stat-card">
+                    <h3>Saldo Atual</h3>
+                    <p class="stat-value">R$ 5.420,75</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Gastos do Mês</h3>
+                    <p class="stat-value">R$ 1.845,30</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Pontos Acumulados</h3>
+                    <p class="stat-value">12.450</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Limite Disponível</h3>
+                    <p class="stat-value">R$ 8.500,00</p>
+                </div>
+            </section>
+
+            <!-- Lista de transações recentes -->
+            <section class="transactions-section">
+                <h2>Transações Recentes</h2>
+                <div class="transactions-list">
+                    <div class="transaction-item">
+                        <div class="transaction-icon"><i class="fas fa-shopping-cart"></i></div>
+                        <div class="transaction-info">
+                            <h4>Supermercado Extra</h4>
+                            <p>Alimentação</p>
+                        </div>
+                        <div class="transaction-date">12 Abr</div>
+                        <div class="transaction-amount">R$ 245,78</div>
+                    </div>
+                    <div class="transaction-item">
+                        <div class="transaction-icon"><i class="fas fa-gas-pump"></i></div>
+                        <div class="transaction-info">
+                            <h4>Posto Ipiranga</h4>
+                            <p>Transporte</p>
+                        </div>
+                        <div class="transaction-date">10 Abr</div>
+                        <div class="transaction-amount">R$ 150,00</div>
+                    </div>
+                    <div class="transaction-item">
+                        <div class="transaction-icon"><i class="fas fa-utensils"></i></div>
+                        <div class="transaction-info">
+                            <h4>Restaurante Sabor</h4>
+                            <p>Alimentação</p>
+                        </div>
+                        <div class="transaction-date">08 Abr</div>
+                        <div class="transaction-amount">R$ 89,90</div>
+                    </div>
+                    <div class="transaction-item">
+                        <div class="transaction-icon"><i class="fas fa-shopping-bag"></i></div>
+                        <div class="transaction-info">
+                            <h4>Shopping Center Norte</h4>
+                            <p>Compras</p>
+                        </div>
+                        <div class="transaction-date">05 Abr</div>
+                        <div class="transaction-amount">R$ 320,50</div>
+                    </div>
+                    <div class="transaction-item">
+                        <div class="transaction-icon"><i class="fas fa-film"></i></div>
+                        <div class="transaction-info">
+                            <h4>Cinema Cinemark</h4>
+                            <p>Entretenimento</p>
+                        </div>
+                        <div class="transaction-date">03 Abr</div>
+                        <div class="transaction-amount">R$ 64,80</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Chat popup -->
+    <div class="chat-container">
+        <div class="chat-button">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="chat-box hidden">
+            <div class="chat-header">
+                <h3>Assistente Financeiro</h3>
+                <button class="btn-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages">
+                <div class="message bot">
+                    Olá! Sou seu assistente financeiro. Como posso ajudar você hoje?
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Digite sua mensagem..." id="message-input">
+                <button id="send-message"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/modules/card-recommendation.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
